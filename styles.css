@@ -1,0 +1,163 @@
+.s-btn.is-disabled {
+	cursor: not-allowed;
+}
+
+.s-btn.is-disabled:hover {
+	background-color: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+div[id^="math-blocks-dropdown-popover"],
+div[id^="text-color-dropdown-popover"] {
+	padding: 0px !important;
+}
+
+.math_block {
+	border-radius: 10px;
+	box-shadow: 12px 12px 17px -7px rgba(66, 68, 90, 1);
+	overflow: hidden;
+	max-width: 800px;
+}
+
+.s-prose p {
+	margin-bottom: 0px !important;
+}
+
+/* .math_block_name > p {
+	padding: 0px !important;
+} */
+
+.math_block_name {
+	margin: 0px;
+	padding: 5px 8px;
+	display: block;
+	color: white;
+	font-weight: bold;
+	background-color: gold;
+}
+
+.math_block_body {
+	padding: 5px 8px;
+	display: block;
+	color: black;
+	background-color: lightgoldenrodyellow;
+}
+
+.theorem_name {
+	background-color: #272687;
+}
+
+.theorem_body {
+	background-color: #e8e8f3;
+}
+
+.definition_name {
+	background-color: rgb(124, 71, 50);
+}
+
+.definition_body {
+	background-color: rgba(124, 71, 50, 0.2);
+}
+
+.example_name {
+	background-color: #006000;
+}
+
+.example_body {
+	background-color: #e7eee6;
+}
+
+.remark_name {
+	background-color: #bf0101;
+}
+
+.remark_body {
+	background-color: #f8e7e6;
+}
+
+.menu-split-button {
+	border: 1px solid transparent;
+	border-radius: 3px;
+}
+
+.menu-split-button:hover {
+	border-color: rgb(241, 242, 243);
+}
+
+.menu-split-button>button {
+	border-radius: 0px;
+}
+
+button.s-color-button:hover {
+	transform: scale(0.8);
+}
+
+button.s-color-button {
+	transition: transform 0.15s;
+}
+
+
+
+
+
+
+
+
+.mw-dropdown {
+	width: fit-content;
+	border: solid black 1px;
+}
+
+.mw-dropdown p,
+.mw-dropdown h1,
+.mw-dropdown h2,
+.mw-dropdown h3,
+.mw-dropdown h4,
+.mw-dropdown h5,
+.mw-dropdown h6 {
+	margin: 0 !important;
+	padding: 0 !important;
+	margin-right: 10px !important;
+}
+
+
+
+.mw-dropdown-item {
+	margin: 0px;
+	display: flex;
+	min-height: 40px;
+	padding: 5px 8px;
+	align-items: center;
+}
+
+
+.logo {
+	margin: 0px;
+}
+
+.mw-shortcut {
+	font-size: 0.9em;
+	padding: 4px;
+	color: #7A869A;
+	background-color: rgba(223, 225, 229, 0.5);
+	border-radius: 3px;
+	margin-left: auto;
+}
+
+
+.mw-btn:not(.is-selected):not(.mw-btn__link):not(.mw-btn__unset):hover {
+	background-color: rgb(241, 242, 243);
+	color: rgb(59, 64, 69);
+	cursor: pointer;
+}

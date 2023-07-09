@@ -149,6 +149,7 @@ export class StacksEditor implements View {
             elementAttributes: {},
             parserFeatures: RichTextEditor.defaultOptions.parserFeatures,
             commonmarkOptions: {
+                enabled: false,
                 classList: commonClasses,
                 preview: {
                     enabled: false,
@@ -252,7 +253,10 @@ export class StacksEditor implements View {
 
         this.innerTarget.appendChild(this.pluginContainer);
 
-        this.createEditorSwitcher(this.options.defaultView, menuTarget);
+        // create editor switcher only if commonmark is enabled
+        if (this.options.commonmarkOptions.enabled) {
+            this.createEditorSwitcher(this.options.defaultView, menuTarget);
+        }
 
         // watch the sticky header and add additional styling when it becomes unstuck
         startStickyObservers(this.innerTarget);

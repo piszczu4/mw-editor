@@ -42,6 +42,8 @@ export type PreviewRenderer = (
 ) => Promise<void>;
 
 export interface CommonmarkOptions extends CommonViewOptions {
+    /** Whether to enable commonmark editor */
+    enabled?: boolean;
     /** Settings for showing a static rendered preview of the editor's contents */
     preview?: {
         /** Whether the preview is enabled */
@@ -132,6 +134,7 @@ export class CommonmarkEditor extends BaseView {
     static get defaultOptions(): CommonmarkOptions {
         return {
             // set to null to disable by default
+            enabled: false,
             editorHelpLink: null,
             menuParentContainer: null,
             parserFeatures: defaultParserFeatures,

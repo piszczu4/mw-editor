@@ -16,7 +16,6 @@
         "test": "jest --config config/jest-unit.config.js",
         "test:e2e": "npx playwright test --config config/playwright.config.ts",
         "start": "webpack serve --config config/webpack.dev.js",
-        "build": "webpack --config config/webpack.prod.js",
         "build:dev": "webpack --config config/webpack.dev.js",
         "build:gh-pages": "webpack --config config/webpack.dev.js --mode=production --",
         "print-stats": "webpack --config config/webpack.prod.js --entry ./src/index.ts --profile --json > stats.json",
@@ -25,7 +24,10 @@
         "lint:prettier:fix": "prettier --check . --end-of-line auto --write",
         "release": "standard-version",
         "prepublishOnly": "npm run build && tsc --module ES6 --sourceMap false",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
     },
     "keywords": [],
     "author": "Stack Exchange Inc",
@@ -45,6 +47,7 @@
     },
     "prettier": "@stackoverflow/prettier-config",
     "devDependencies": {
+        "vite": "^4.3.9",
         "@commitlint/cli": "^17.4.4",
         "@commitlint/config-conventional": "^17.4.4",
         "@playwright/test": "^1.31.1",
@@ -85,6 +88,7 @@
         "webpack-merge": "^5.8.0"
     },
     "dependencies": {
+        "@benrbray/prosemirror-math": "^0.2.2",
         "@lezer/highlight": "^1.1.3",
         "@lezer/markdown": "^1.0.2",
         "@stackoverflow/stacks": "^1.9.0",
